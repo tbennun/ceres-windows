@@ -4,3 +4,6 @@
 [submodule "CXSparse"]
 	path = CXSparse
 	url = https://github.com/PetterS/CXSparse.git
+[submodule "google-glog"]
+	path = google-glog
+	url = git@github.com:svn2github/google-glog.git
