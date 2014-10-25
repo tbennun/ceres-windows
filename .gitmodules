@@ -1,0 +1,9 @@
+[submodule "ceres-solver"]
+	path = ceres-solver
+	url = https://ceres-solver.googlesource.com/ceres-solver
+[submodule "CXSparse"]
+	path = CXSparse
+	url = https://github.com/PetterS/CXSparse.git
+[submodule "google-glog"]
+	path = google-glog
+	url = https://github.com/svn2github/google-glog.git
