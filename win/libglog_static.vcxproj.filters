@@ -9,7 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\google-glog\src\logging.cc">
+    <ClCompile Include="glog\logging.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\google-glog\src\windows\port.cc">
