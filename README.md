@@ -4,6 +4,9 @@ ceres-windows
 A ceres-solver wrapper for Visual Studio.
 Written and tested on Visual Studio 2010 and 2012, using Win32/x64 on both Debug and Release.
 
+For a wrapper that uses ceres-solver 1.9.0 and CXSparse, go to the
+stable branch at https://github.com/tbennun/ceres-windows/tree/stable
+
 Conversion to VS2012 should be done automatically by Visual Studio. If not, modify the platform toolset
 to VS2012 in the project properties. Conversion to VS2013 and above should be performed in the 
 same manner.
