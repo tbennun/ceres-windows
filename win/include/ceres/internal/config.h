@@ -48,7 +48,10 @@
 #define CERES_NO_SUITESPARSE
 
 // If defined, Ceres was compiled without CXSparse.
-//#define CERES_NO_CXSPARSE
+#define CERES_NO_CXSPARSE
+
+// Use Eigen sparse linear algebra backend by default.
+#define CERES_USE_EIGEN_SPARSE
 
 // If defined, Ceres was compiled without Schur specializations.
 // #define CERES_RESTRICT_SCHUR_SPECIALIZATION

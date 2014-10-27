@@ -84,7 +84,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\CXSparse\Include;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -97,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\CXSparse\Include;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>false</OpenMPSupport>
@@ -113,7 +113,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\CXSparse\Include;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>true</OpenMPSupport>
@@ -131,7 +131,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\CXSparse\Include;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>true</OpenMPSupport>
@@ -154,6 +154,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_sparse_matrix.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\block_sparse_matrix.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\block_structure.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\callbacks.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\canonical_views_clustering.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\cgnr_solver.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\collections_port.cc">
@@ -221,6 +222,8 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_d_d_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checking_cost_function.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem_solver.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\implicit_schur_complement.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\incomplete_lq_factorization.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.cc" />
@@ -232,6 +235,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\line_search.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\line_search_direction.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\line_search_minimizer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_preprocessor.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\local_parameterization.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\loss_function.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\low_rank_inverse_hessian.cc" />
@@ -241,9 +245,11 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\partitioned_matrix_view.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\polynomial.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\preconditioner.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\preprocessor.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\problem.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\problem_impl.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\program.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\reorder_program.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\residual_block.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\residual_block_utils.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\schur_complement_solver.cc" />
@@ -252,7 +258,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\scratch_evaluate_preparer.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\single_linkage_clustering.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\solver_impl.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\solver_utils.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\sparse_matrix.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\sparse_normal_cholesky_solver.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\split.cc" />
@@ -260,6 +266,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\suitesparse.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_minimizer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_strategy.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\types.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\visibility.cc" />
@@ -280,8 +287,9 @@
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_numeric_diff_cost_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\fpclassify.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\gradient_checker.h" />
+    <ClInclude Include="..\ceres-solver\include\ceres\gradient_problem.h" />
+    <ClInclude Include="..\ceres-solver\include\ceres\gradient_problem_solver.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\internal\autodiff.h" />
-    <ClInclude Include="include\ceres\internal\config.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\internal\disable_warnings.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\internal\eigen.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\internal\fixed_array.h" />
@@ -298,13 +306,13 @@
     <ClInclude Include="..\ceres-solver\include\ceres\loss_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\normal_prior.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\numeric_diff_cost_function.h" />
-    <ClInclude Include="..\ceres-solver\include\ceres\numeric_diff_functor.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\ordered_groups.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\problem.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\rotation.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\sized_cost_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\solver.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\types.h" />
+    <ClInclude Include="..\ceres-solver\include\ceres\version.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\array_utils.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\blas.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\block_evaluate_preparer.h" />
@@ -316,6 +324,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\block_random_access_sparse_matrix.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\block_sparse_matrix.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\block_structure.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\callbacks.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\canonical_views_clustering.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\casts.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\cgnr_linear_operator.h" />
@@ -342,6 +351,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\execution_summary.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\file.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\gradient_checking_cost_function.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\gradient_problem_evaluator.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\graph.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\graph_algorithms.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\implicit_schur_complement.h" />
@@ -356,6 +366,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\line_search.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\line_search_direction.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\line_search_minimizer.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\line_search_preprocessor.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\low_rank_inverse_hessian.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\map_util.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\minimizer.h" />
@@ -366,10 +377,12 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\partitioned_matrix_view_impl.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\polynomial.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\preconditioner.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\preprocessor.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\problem_impl.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\program.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\program_evaluator.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\random.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\reorder_program.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\residual_block.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\residual_block_utils.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\schur_complement_solver.h" />
@@ -379,7 +392,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\scratch_evaluate_preparer.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\single_linkage_clustering.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\small_blas.h" />
-    <ClInclude Include="..\ceres-solver\internal\ceres\solver_impl.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\solver_utils.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\sparse_matrix.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\sparse_normal_cholesky_solver.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\split.h" />
@@ -388,15 +401,14 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\suitesparse.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_minimizer.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_strategy.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\wall_time.h" />
+    <ClInclude Include="include\ceres\internal\config.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="CXSparse.vcxproj">
-      <Project>{41719cb7-7a45-43f2-afc8-dddc938ebc32}</Project>
-    </ProjectReference>
     <ProjectReference Include="libglog_static.vcxproj">
       <Project>{772c2111-bbbf-49e6-b912-198a7f7a88e5}</Project>
     </ProjectReference>

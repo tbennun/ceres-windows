@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectReference Include="..\ceres_static.vcxproj">
-      <Project>{d0be7347-5337-4e25-8363-8e8175bc09a5}</Project>
+      <Project>{6d587d16-154f-487d-a605-63f7f0da106e}</Project>
     </ProjectReference>
     <ProjectReference Include="..\libglog_static.vcxproj">
       <Project>{772c2111-bbbf-49e6-b912-198a7f7a88e5}</Project>
