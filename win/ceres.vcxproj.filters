@@ -395,6 +395,12 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\canonical_views_clustering.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_6.cc">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_6.cc">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ceres\internal\config.h">

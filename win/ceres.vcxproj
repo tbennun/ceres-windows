@@ -189,6 +189,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_3.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_6.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_9.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_3.cc" />
@@ -208,6 +209,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_3.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_6.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_9.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_3.cc" />
