@@ -84,7 +84,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -97,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>false</OpenMPSupport>
@@ -113,7 +113,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>true</OpenMPSupport>
@@ -131,7 +131,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\google-glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;CERES_BUILDING_SHARED_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>true</OpenMPSupport>

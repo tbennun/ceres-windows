@@ -81,7 +81,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\google-glog\src;..\google-glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\glog\src;..\glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -94,7 +94,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\google-glog\src;..\google-glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\glog\src;..\glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -107,7 +107,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\google-glog\src;..\google-glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\glog\src;..\glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -120,7 +120,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\google-glog\src;..\google-glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\glog\src;..\glog\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -130,24 +130,24 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="glog\logging.cc" />
-    <ClCompile Include="..\google-glog\src\windows\port.cc" />
-    <ClCompile Include="..\google-glog\src\raw_logging.cc" />
-    <ClCompile Include="..\google-glog\src\utilities.cc" />
-    <ClCompile Include="..\google-glog\src\vlog_is_on.cc" />
+    <ClCompile Include="..\glog\src\logging.cc" />
+    <ClCompile Include="..\glog\src\windows\port.cc" />
+    <ClCompile Include="..\glog\src\raw_logging.cc" />
+    <ClCompile Include="..\glog\src\utilities.cc" />
+    <ClCompile Include="..\glog\src\vlog_is_on.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\google-glog\src\base\commandlineflags.h" />
-    <ClInclude Include="..\google-glog\src\windows\config.h" />
-    <ClInclude Include="..\google-glog\src\base\googleinit.h" />
-    <ClInclude Include="..\google-glog\src\windows\glog\log_severity.h" />
-    <ClInclude Include="..\google-glog\src\windows\glog\logging.h" />
-    <ClInclude Include="..\google-glog\src\base\mutex.h" />
-    <ClInclude Include="..\google-glog\src\windows\port.h" />
-    <ClInclude Include="..\google-glog\src\windows\glog\raw_logging.h" />
-    <ClInclude Include="..\google-glog\src\windows\glog\stl_logging.h" />
-    <ClInclude Include="..\google-glog\src\utilities.h" />
-    <ClInclude Include="..\google-glog\src\windows\glog\vlog_is_on.h" />
+    <ClInclude Include="..\glog\src\base\commandlineflags.h" />
+    <ClInclude Include="..\glog\src\windows\config.h" />
+    <ClInclude Include="..\glog\src\base\googleinit.h" />
+    <ClInclude Include="..\glog\src\windows\glog\log_severity.h" />
+    <ClInclude Include="..\glog\src\windows\glog\logging.h" />
+    <ClInclude Include="..\glog\src\base\mutex.h" />
+    <ClInclude Include="..\glog\src\windows\port.h" />
+    <ClInclude Include="..\glog\src\windows\glog\raw_logging.h" />
+    <ClInclude Include="..\glog\src\windows\glog\stl_logging.h" />
+    <ClInclude Include="..\glog\src\utilities.h" />
+    <ClInclude Include="..\glog\src\windows\glog\vlog_is_on.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

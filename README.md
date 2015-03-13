@@ -26,7 +26,7 @@ Libraries
 
   * ceres-solver 1.10.0: http://ceres-solver.org/
 
-  * Google glog: https://code.google.com/p/google-glog/
+  * Google glog: http://www.github.com/google/glog
 
 
 License

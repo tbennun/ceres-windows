@@ -9,54 +9,54 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="glog\logging.cc">
+    <ClCompile Include="..\glog\src\logging.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\google-glog\src\windows\port.cc">
+    <ClCompile Include="..\glog\src\windows\port.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\google-glog\src\raw_logging.cc">
+    <ClCompile Include="..\glog\src\raw_logging.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\google-glog\src\utilities.cc">
+    <ClCompile Include="..\glog\src\utilities.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\google-glog\src\vlog_is_on.cc">
+    <ClCompile Include="..\glog\src\vlog_is_on.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\google-glog\src\base\commandlineflags.h">
+    <ClInclude Include="..\glog\src\base\commandlineflags.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\config.h">
+    <ClInclude Include="..\glog\src\windows\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\base\googleinit.h">
+    <ClInclude Include="..\glog\src\base\googleinit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\glog\log_severity.h">
+    <ClInclude Include="..\glog\src\windows\glog\log_severity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\glog\logging.h">
+    <ClInclude Include="..\glog\src\windows\glog\logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\base\mutex.h">
+    <ClInclude Include="..\glog\src\base\mutex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\port.h">
+    <ClInclude Include="..\glog\src\windows\port.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\glog\raw_logging.h">
+    <ClInclude Include="..\glog\src\windows\glog\raw_logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\glog\stl_logging.h">
+    <ClInclude Include="..\glog\src\windows\glog\stl_logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\utilities.h">
+    <ClInclude Include="..\glog\src\utilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\google-glog\src\windows\glog\vlog_is_on.h">
+    <ClInclude Include="..\glog\src\windows\glog\vlog_is_on.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
