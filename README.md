@@ -24,7 +24,7 @@ Dependencies
 Libraries
 =========
 
-  * ceres-solver 1.10.0: http://ceres-solver.org/
+  * ceres-solver 1.11.0: http://ceres-solver.org/
 
   * Google glog: http://www.github.com/google/glog
 
