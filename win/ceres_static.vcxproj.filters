@@ -137,10 +137,58 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_d_d_d.cc">
       <Filter>Generated Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\collections_port.cc">
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_6.cc">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_6.cc">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\array_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\blas.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_evaluate_preparer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobi_preconditioner.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobian_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_dense_matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_diagonal_matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_sparse_matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_sparse_matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_structure.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\c_api.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\callbacks.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\canonical_views_clustering.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\ceres-solver\internal\ceres\cgnr_solver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\collections_port.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\ceres-solver\internal\ceres\compressed_col_sparse_matrix_utils.cc">
@@ -210,9 +258,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\ceres-solver\internal\ceres\implicit_schur_complement.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\incomplete_lq_factorization.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.cc">
@@ -353,64 +398,136 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\wall_time.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\array_utils.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\blas.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_evaluate_preparer.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobi_preconditioner.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobian_writer.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_dense_matrix.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_diagonal_matrix.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_matrix.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_sparse_matrix.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_sparse_matrix.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_structure.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\c_api.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\callbacks.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\canonical_views_clustering.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_6.cc">
-      <Filter>Generated Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_6.cc">
-      <Filter>Generated Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ceres\internal\config.h">
       <Filter>Configuration</Filter>
     </ClInclude>
-    <ClInclude Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.h">
-      <Filter>Internal Header Files</Filter>
+    <ClInclude Include="..\ceres-solver\include\ceres\autodiff_cost_function.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\ceres-solver\internal\ceres\wall_time.h">
-      <Filter>Internal Header Files</Filter>
+    <ClInclude Include="..\ceres-solver\include\ceres\autodiff_local_parameterization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\c_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\ceres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\conditioned_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\cost_function_to_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\covariance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\crs_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\cubic_interpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_autodiff_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_cost_function_to_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_numeric_diff_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\fpclassify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\gradient_checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\gradient_problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\gradient_problem_solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\iteration_callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\jet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\local_parameterization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\loss_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\normal_prior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\numeric_diff_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\numeric_diff_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\ordered_groups.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\rotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\sized_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\autodiff.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\disable_warnings.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\eigen.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\fixed_array.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\macros.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\manual_constructor.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\numeric_diff.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\port.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\reenable_warnings.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\scoped_ptr.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\internal\variadic_evaluate.h">
+      <Filter>Header Files\internal</Filter>
     </ClInclude>
     <ClInclude Include="..\ceres-solver\internal\ceres\array_utils.h">
       <Filter>Internal Header Files</Filter>
@@ -535,10 +652,10 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\graph_algorithms.h">
       <Filter>Internal Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\ceres-solver\internal\ceres\implicit_schur_complement.h">
+    <ClInclude Include="..\ceres-solver\internal\ceres\householder_vector.h">
       <Filter>Internal Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\ceres-solver\internal\ceres\incomplete_lq_factorization.h">
+    <ClInclude Include="..\ceres-solver\internal\ceres\implicit_schur_complement.h">
       <Filter>Internal Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\ceres-solver\internal\ceres\integral_types.h">
@@ -685,122 +802,11 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility.h">
       <Filter>Internal Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\autodiff_cost_function.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.h">
+      <Filter>Internal Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\autodiff_local_parameterization.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\c_api.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\ceres.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\conditioned_cost_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\cost_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\cost_function_to_functor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\covariance.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\crs_matrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_autodiff_cost_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_numeric_diff_cost_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\fpclassify.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\gradient_checker.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\gradient_problem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\gradient_problem_solver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\iteration_callback.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\jet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\local_parameterization.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\loss_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\normal_prior.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\numeric_diff_cost_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\ordered_groups.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\problem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\rotation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\sized_cost_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\solver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\version.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\autodiff.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\disable_warnings.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\eigen.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\fixed_array.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\macros.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\manual_constructor.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\numeric_diff.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\port.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\reenable_warnings.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\scoped_ptr.h">
-      <Filter>Header Files\internal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ceres-solver\include\ceres\internal\variadic_evaluate.h">
-      <Filter>Header Files\internal</Filter>
+    <ClInclude Include="..\ceres-solver\internal\ceres\wall_time.h">
+      <Filter>Internal Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
