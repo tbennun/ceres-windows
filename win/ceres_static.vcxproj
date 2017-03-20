@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -26,26 +26,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -143,136 +143,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\ceres-solver\internal\ceres\array_utils.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\blas.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_evaluate_preparer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobian_writer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobi_preconditioner.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_dense_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_diagonal_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\block_structure.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\callbacks.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\canonical_views_clustering.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\cgnr_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\collections_port.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\ceres-solver\internal\ceres\compressed_col_sparse_matrix_utils.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\compressed_row_jacobian_writer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\compressed_row_sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\conditioned_cost_function.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\conjugate_gradients_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\coordinate_descent_minimizer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\corrector.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\covariance.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\covariance_impl.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\cxsparse.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\c_api.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\dense_normal_cholesky_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\dense_qr_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\dense_sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\detect_structure.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\dogleg_strategy.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\dynamic_compressed_row_jacobian_writer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\dynamic_compressed_row_sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\evaluator.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\file.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_2.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_6.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_9.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_8.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_9.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_d_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_2.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_d_d_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_2.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_6.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_9.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_8.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_9.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_d_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_2.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_3.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_4.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_d_d_d.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checking_cost_function.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\implicit_schur_complement.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\lapack.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\levenberg_marquardt_strategy.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\linear_least_squares_problems.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\linear_operator.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\linear_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\line_search.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_direction.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_minimizer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_preprocessor.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\local_parameterization.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\loss_function.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\low_rank_inverse_hessian.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\minimizer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\normal_prior.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\parameter_block_ordering.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\partitioned_matrix_view.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\polynomial.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\preconditioner.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\preprocessor.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\problem.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\problem_impl.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\program.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\reorder_program.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\residual_block.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\residual_block_utils.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\schur_complement_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\schur_eliminator.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\schur_jacobi_preconditioner.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\scratch_evaluate_preparer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\single_linkage_clustering.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\solver_utils.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\sparse_normal_cholesky_solver.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\split.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\stringprintf.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\suitesparse.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_minimizer.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_strategy.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\types.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\visibility.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.cc" />
-    <ClCompile Include="..\ceres-solver\internal\ceres\wall_time.cc" />
+    <ProjectReference Include="libglog_static.vcxproj">
+      <Project>{772c2111-bbbf-49e6-b912-198a7f7a88e5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\ceres-solver\include\ceres\autodiff_cost_function.h" />
@@ -286,6 +159,7 @@
     <ClInclude Include="..\ceres-solver\include\ceres\cubic_interpolation.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\c_api.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_autodiff_cost_function.h" />
+    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_cost_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_cost_function_to_functor.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_numeric_diff_cost_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\fpclassify.h" />
@@ -361,6 +235,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\householder_vector.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\implicit_schur_complement.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\integral_types.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\is_close.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\lapack.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\levenberg_marquardt_strategy.h" />
@@ -406,6 +281,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_minimizer.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_step_evaluator.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_strategy.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.h" />
@@ -413,9 +289,139 @@
     <ClInclude Include="include\ceres\internal\config.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="libglog_static.vcxproj">
-      <Project>{772c2111-bbbf-49e6-b912-198a7f7a88e5}</Project>
-    </ProjectReference>
+    <ClCompile Include="..\ceres-solver\internal\ceres\array_utils.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\blas.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_evaluate_preparer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobian_writer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_jacobi_preconditioner.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_dense_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_diagonal_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_random_access_sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\block_structure.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\callbacks.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\canonical_views_clustering.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\cgnr_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\collections_port.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\compressed_col_sparse_matrix_utils.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\compressed_row_jacobian_writer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\compressed_row_sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\conditioned_cost_function.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\conjugate_gradients_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\coordinate_descent_minimizer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\corrector.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\covariance.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\covariance_impl.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\cxsparse.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\c_api.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\dense_normal_cholesky_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\dense_qr_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\dense_sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\detect_structure.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\dogleg_strategy.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\dynamic_compressed_row_jacobian_writer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\dynamic_compressed_row_sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\evaluator.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\file.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_2.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_2_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_6.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_9.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_3_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_8.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_9.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_4_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_2_d_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_2.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_4_4_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\partitioned_matrix_view_d_d_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_2.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_2_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_6.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_9.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_3_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_8.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_9.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_4_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_2_d_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_2.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_3.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_4.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_d_d_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checker.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checking_cost_function.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\implicit_schur_complement.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\is_close.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\lapack.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\levenberg_marquardt_strategy.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\linear_least_squares_problems.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\linear_operator.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\linear_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\line_search.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_direction.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_minimizer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\line_search_preprocessor.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\local_parameterization.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\loss_function.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\low_rank_inverse_hessian.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\minimizer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\normal_prior.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\parameter_block_ordering.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\partitioned_matrix_view.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\polynomial.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\preconditioner.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\preprocessor.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\problem.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\problem_impl.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\program.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\reorder_program.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\residual_block.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\residual_block_utils.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\schur_complement_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\schur_eliminator.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\schur_jacobi_preconditioner.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\scratch_evaluate_preparer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\single_linkage_clustering.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\solver_utils.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\sparse_normal_cholesky_solver.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\split.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\stringprintf.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\suitesparse.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_minimizer.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_step_evaluator.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_strategy.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\types.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\visibility.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\wall_time.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

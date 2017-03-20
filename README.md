@@ -2,14 +2,14 @@ ceres-windows
 =============
 
 A ceres-solver wrapper for Visual Studio.
-Written and tested on Visual Studio 2010 and 2012, using Win32/x64 on both Debug and Release.
+Tested on Visual Studio 2010, 2012 and 2015, using Win32/x64 on both Debug and Release.
 
 For a wrapper that uses ceres-solver 1.9.0 and CXSparse, go to the
 CXSparse branch at https://github.com/tbennun/ceres-windows/tree/cxsparse
 
-Conversion to VS2012 should be done automatically by Visual Studio. If not, modify the platform toolset
-to VS2012 in the project properties. Conversion to VS2013 and above should be performed in the 
-same manner.
+Conversion to newer versions of Visual Studio should be performed automatically by the IDE. 
+If projects are not compiling, make sure that the platform toolset matches the version of Visual
+Studio in the project properties.
 
 
 Sample projects (using ceres-solver's code examples) are also embedded in the solution.
@@ -17,14 +17,14 @@ Sample projects (using ceres-solver's code examples) are also embedded in the so
 Dependencies
 ============
 
-  * Eigen (http://eigen.tuxfamily.org/): Version 3.2 or above. It's a header-only 
-    library, so just extract Eigen to the solution directory and it should compile. 
+  * Eigen (http://eigen.tuxfamily.org/): Version 3.3 or above. It's a header-only 
+    library, so simply extract Eigen to the solution directory and it should compile. 
     Alternatively, set it up in one of your default include directories.
 
 Libraries
 =========
 
-  * ceres-solver 1.11.0: http://ceres-solver.org/
+  * ceres-solver 1.12.0: http://ceres-solver.org/
 
   * Google glog: http://www.github.com/google/glog
 

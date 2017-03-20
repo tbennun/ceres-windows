@@ -94,4 +94,9 @@
 #define CERES_USING_SHARED_LIBRARY
 #endif
 
+// If defined, Ceres was compiled with a version MSVC >= 2005 which
+// deprecated the standard POSIX names for bessel functions, replacing them
+// with underscore prefixed versions (e.g. j0() -> _j0()).
+#define CERES_MSVC_USE_UNDERSCORE_PREFIXED_BESSEL_FUNCTIONS
+
 #endif  // CERES_PUBLIC_INTERNAL_CONFIG_H_

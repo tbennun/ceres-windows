@@ -31,3 +31,4 @@ Eigen/
 *.sdf
 *.opensdf
 ipch/
+*.VC.*db

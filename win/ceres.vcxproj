@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -26,26 +26,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -223,10 +223,12 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_4.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_4_4_d.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\generated\schur_eliminator_d_d_d.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checker.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checking_cost_function.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\gradient_problem_solver.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\implicit_schur_complement.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\is_close.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\lapack.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\levenberg_marquardt_strategy.cc" />
@@ -268,6 +270,7 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_minimizer.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.cc" />
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_step_evaluator.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_strategy.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\types.cc" />
     <ClCompile Include="..\ceres-solver\internal\ceres\visibility.cc" />
@@ -286,6 +289,7 @@
     <ClInclude Include="..\ceres-solver\include\ceres\cubic_interpolation.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\c_api.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_autodiff_cost_function.h" />
+    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_cost_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_cost_function_to_functor.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\dynamic_numeric_diff_cost_function.h" />
     <ClInclude Include="..\ceres-solver\include\ceres\fpclassify.h" />
@@ -361,6 +365,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\householder_vector.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\implicit_schur_complement.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\integral_types.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\is_close.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\iterative_schur_complement_solver.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\lapack.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\levenberg_marquardt_strategy.h" />
@@ -406,6 +411,7 @@
     <ClInclude Include="..\ceres-solver\internal\ceres\triplet_sparse_matrix.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_minimizer.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_preprocessor.h" />
+    <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_step_evaluator.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_strategy.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility.h" />
     <ClInclude Include="..\ceres-solver\internal\ceres\visibility_based_preconditioner.h" />

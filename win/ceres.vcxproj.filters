@@ -398,6 +398,15 @@
     <ClCompile Include="..\ceres-solver\internal\ceres\wall_time.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\gradient_checker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\is_close.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ceres-solver\internal\ceres\trust_region_step_evaluator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ceres\internal\config.h">
@@ -807,6 +816,15 @@
     </ClInclude>
     <ClInclude Include="..\ceres-solver\include\ceres\internal\variadic_evaluate.h">
       <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\include\ceres\dynamic_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\internal\ceres\is_close.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ceres-solver\internal\ceres\trust_region_step_evaluator.h">
+      <Filter>Internal Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
