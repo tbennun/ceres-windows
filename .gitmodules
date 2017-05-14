@@ -1,6 +1,3 @@
 [submodule "ceres-solver"]
 	path = ceres-solver
 	url = https://ceres-solver.googlesource.com/ceres-solver
-[submodule "glog"]
-	path = glog
-	url = https://github.com/tbennun/glog.git
