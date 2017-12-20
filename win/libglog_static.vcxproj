@@ -130,7 +130,10 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\glog\src\demangle.cc" />
     <ClCompile Include="..\glog\src\logging.cc" />
+    <ClCompile Include="..\glog\src\signalhandler.cc" />
+    <ClCompile Include="..\glog\src\symbolize.cc" />
     <ClCompile Include="..\glog\src\windows\port.cc" />
     <ClCompile Include="..\glog\src\raw_logging.cc" />
     <ClCompile Include="..\glog\src\utilities.cc" />

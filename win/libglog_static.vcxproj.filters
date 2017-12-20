@@ -24,6 +24,15 @@
     <ClCompile Include="..\glog\src\vlog_is_on.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\glog\src\demangle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\glog\src\symbolize.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\glog\src\signalhandler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\glog\src\base\commandlineflags.h">
