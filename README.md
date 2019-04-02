@@ -14,6 +14,18 @@ Studio in the project properties.
 
 Sample projects (using ceres-solver's code examples) are also embedded in the solution.
 
+How to clone with submodules
+============
+
+This repository contains git submodules. In order to clone it appropriately the submodules need to be initialized
+
+```shell
+git clone https://github.com/tbennun/ceres-windows.git
+cd ceres-windows
+git submodule update --init --recursive
+```
+
+
 Dependencies
 ============
 
