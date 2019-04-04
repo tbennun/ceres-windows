@@ -4,3 +4,6 @@
 [submodule "glog"]
 	path = glog
 	url = https://github.com/google/glog.git
+[submodule "Eigen"]
+	path = Eigen
+	url = https://github.com/eigenteam/eigen-git-mirror.git
