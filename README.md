@@ -40,7 +40,7 @@ In Project properties->C/C++->General->Additional Include Directories, add:
 ```
 In Project properties->Linker->General->Additional Library Directories, add:
 ```shell
-    ;$(CERES_WINDOWS_DIR)\$(Platform)\$(Configuration)
+;$(CERES_WINDOWS_DIR)\$(Platform)\$(Configuration)
 ```
 
 Make sure you compile ceres-solver for each platform and configuration you intend to use (x64/Release etc.).
