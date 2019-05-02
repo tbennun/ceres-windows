@@ -25,27 +25,28 @@ cd ceres-windows
 git submodule update --init --recursive
 ```
 
-Importing
+Static Linkage
 =========
-You will need to add Project properties->C/C++->General->Pre Processor Definitions as follows, once completed they should look like this in Visual Studio:
-```code
+If an external project is statically linked to ceres-solver, the following settings have to be modified in the linked project.
+In Project properties->C/C++->General->Preprocessor Definitions, add the following flags:
+```shell
 %(PreprocessorDefinitions);GOOGLE_GLOG_DLL_DECL=;_MBCS;CERES_MSVC_USE_UNDERSCORE_PREFIXED_BESSEL_FUNCTIONS
 ```
-Add the include and lib folders, first create an environment variable that points to the folder you cloned this repository into.
+To add the include and library folders, first create an environment variable that points to the folder you cloned this repository into, e.g., `CERES_WINDOWS_DIR=c:\ceres-windows`.
 
-eg CERES_WINDOWS_DIR=c:\ceres-windows
-
-Project properties->C/C++->General->Additional Include Directories, add
-```code
+In Project properties->C/C++->General->Additional Include Directories, add:
+```shell
 ;$(CERES_WINDOWS_DIR)\ceres-solver\include
 ```
-Project properties->Linker->General->Additional Lirary Directories, add
+In Project properties->Linker->General->Additional Library Directories, add:
+```shell
     ;$(CERES_WINDOWS_DIR)\$(Platform)\$(Configuration)
+```
 
-Make sure you compile for each platform and configuration you intend to use, eg x64 / Release.
+Make sure you compile ceres-solver for each platform and configuration you intend to use (x64/Release etc.).
 
-Project properties->Linker->Input->Additional Dependencies, add
-```code
+Finally, in Project properties->Linker->Input->Additional Dependencies, add:
+```shell
 ;ceres.lib;libglog_static.lib
 ```
 
