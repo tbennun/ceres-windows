@@ -29,7 +29,7 @@ Importing
 =========
 You will need to add Project properties->C/C++->General->Pre Processor Definitions as follows, once completed they should look like this in Visual Studio:
 ```code
-GOOGLE_GLOG_DLL_DECL=;_MBCS;%(PreprocessorDefinitions)
+%(PreprocessorDefinitions);GOOGLE_GLOG_DLL_DECL=;_MBCS;CERES_MSVC_USE_UNDERSCORE_PREFIXED_BESSEL_FUNCTIONS
 ```
 Add the include and lib folders, first create an environment variable that points to the folder you cloned this repository into.
 
